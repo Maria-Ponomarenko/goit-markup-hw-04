@@ -130,13 +130,13 @@ address {
 .hero {
     padding: 188px 0;
     max-width: 1440px;
-    background-position: center;
     background-color: #2e2f42;
     background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
          url(../images/people-office.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -178,6 +178,10 @@ address {
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+
+.advantages {
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -294,7 +298,6 @@ address {
 .team-icon-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 24px;
 }
 
@@ -305,8 +308,8 @@ address {
 
 .team-icon-link {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: #4d5ae5;
@@ -366,11 +369,13 @@ address {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover .portfolio-cover-text {
+.portfolio-list-item:hover .portfolio-cover-text,
+.portfolio-list-item:focus .portfolio-cover-text {
     transform: translateY(0);
 }
 
-.portfolio-list-item:hover {
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -451,12 +456,17 @@ address {
     gap: 16px;
 }
 
+.footer-socmedia-item {
+    width: 40px;
+    height: 40px;
+}
+
 .footer-socmedia-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
